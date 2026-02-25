@@ -1113,9 +1113,14 @@ function App() {
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="w-10 h-10 rounded-lg bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-lg bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors shadow-sm"
+                title={isSidebarOpen ? 'Close sidebar' : 'Open sidebar'}
               >
-                <Menu className="w-5 h-5 text-slate-600" />
+                {isSidebarOpen ? (
+                  <X className="w-5 h-5 text-white" />
+                ) : (
+                  <Menu className="w-5 h-5 text-white" />
+                )}
               </button>
               <div>
                 <h1 className="text-xl font-bold text-slate-900 tracking-tight">
