@@ -1042,8 +1042,8 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Sidebar */}
-      <aside className={`fixed top-0 left-0 h-full bg-white border-r z-30 transition-all duration-300 ${isSidebarOpen ? 'w-72' : 'w-0'} overflow-hidden`}>
-        <div className="flex flex-col h-full w-72">
+      <aside className={`fixed top-0 left-0 h-full w-72 bg-white border-r z-30 transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="flex flex-col h-full">
           {/* Logo */}
           <div className="p-6 border-b">
             <div className="flex items-center gap-3">
