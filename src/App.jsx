@@ -1109,7 +1109,7 @@ function App() {
       <main className={`transition-all duration-300 ${isSidebarOpen ? 'ml-72' : 'ml-0'}`}>
         {/* Header */}
         <header className="sticky top-0 z-20 bg-white/80 backdrop-blur-lg border-b">
-          <div className="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+          <div className="px-8 py-5 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -1136,7 +1136,7 @@ function App() {
         </header>
 
         {/* Content */}
-        <div className="max-w-5xl mx-auto px-6 py-10">
+        <div className="px-8 py-8">
           {renderSection()}
         </div>
       </main>
